@@ -1,0 +1,28 @@
+<div class="mainwrapper">
+        <div class="navbox" id="js-navigation">
+          <a href="./architecture_design.html">About</a>
+          <a href="./location.html">Location</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./inquiries.html">Inquiries</a>
+          <a href="./employees.html">Employees</a>
+        </div>
+      
+        <div id="header"></div>
+      
+        <div id="js-content">
+          <!-- content will be loaded here -->
+          <p>This is where content is suppose to be loaded ...</p>
+        </div>
+      </div>
+      
+      <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+      <script>
+        $(document).ready(function() {
+          $('#js-content').load('/architecture_design.html');
+      
+          $('#js-navigation a').click(function(e) {
+            e.preventDefault();
+            $("#js-content").load(e.target.href);
+          })
+        });
+      </script>
