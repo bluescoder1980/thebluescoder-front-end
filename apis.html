@@ -36,7 +36,7 @@
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
               <!--In future add a model pop-up-->
-              <img src="img/api_landing.jpg" class="img-fluid" alt="">
+              <img src="img/api_integration_design.JPG" class="img-fluid" alt="">
             </div>
             <div class="tab-pane fade" id="list-strava" role="tabpanel" aria-labelledby="list-strava-list">
                 <!--In future add a model pop-up ... Need to figure out how to render an HTML page.-->
@@ -49,6 +49,9 @@
               </div>
             <div class="tab-pane fade" id="list-spotify" role="tabpanel" aria-labelledby="list-spotify-list">
               Spotify Integration ... Coming Soon.
+              <script>
+                $(document).ready(function(){$('#list-spotify').load("apis/spotifyApi.html");                    });
+              </script>
             </div>
             <div class="tab-pane fade" id="list-git" role="tabpanel" aria-labelledby="list-git-list">
               Git Hub Integration ... Coming Soon.
